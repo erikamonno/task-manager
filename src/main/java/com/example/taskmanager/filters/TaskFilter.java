@@ -15,6 +15,7 @@ public class TaskFilter {
     private Instant startedTimestampTo;
     private Instant endTimestampFrom;
     private Instant endTimestampTo;
+    private Boolean isEstimatedTimeExceeded;
     private UUID projectId;
     private UUID statusId;
     private UUID assignedTo;

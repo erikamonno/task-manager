@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 
+import java.time.Duration;
 import java.time.Instant;
 import java.util.UUID;
 @Data
@@ -33,6 +34,9 @@ public class Task {
     @Column(name = "end_timestamp")
     @CreationTimestamp
     private Instant endTimestamp;
+
+    @Column(name = "estimated_time", columnDefinition = "interval")
+    private Duration estimatedTime;
 
     @ManyToOne
     @JoinColumn(name = "project_id")
