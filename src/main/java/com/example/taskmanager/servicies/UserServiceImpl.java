@@ -28,7 +28,6 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserDto insertUser(UserDto dto) {
         User entity = new User();
-        entity.setId(dto.getId());
         entity.setName(dto.getName());
         entity.setSurname(dto.getSurname());
         entity.setUsername(dto.getUsername());

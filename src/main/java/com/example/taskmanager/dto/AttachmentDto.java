@@ -21,5 +21,5 @@ public class AttachmentDto {
     private TaskDto task;
 
     @NotNull
-    private byte content;
+    private byte[] content;
 }

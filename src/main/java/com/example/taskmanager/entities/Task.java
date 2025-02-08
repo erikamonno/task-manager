@@ -24,15 +24,13 @@ public class Task {
     private String description;
 
     @Column(name = "created_timestamp")
-    @CreationTimestamp
+    @CreationTimestamp //quando crea un record mette automaticamente su quella colonna il timestamp attuale
     private Instant createdTimestamp;
 
     @Column(name = "started_timestamp")
-    @CreationTimestamp
     private Instant startedTimestamp;
 
     @Column(name = "end_timestamp")
-    @CreationTimestamp
     private Instant endTimestamp;
 
     @Column(name = "estimated_time", columnDefinition = "interval")
